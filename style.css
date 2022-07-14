@@ -356,7 +356,6 @@ textarea{
 .formulario__boton::before{
     content: 'Enviar';
     color: white;
-    transition: all .5s;
 }
 
 
