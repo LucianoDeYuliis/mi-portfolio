@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.inicio{
+    display: grid;
+    height: 100vh;
+    background-color: #212529;
+    grid-template-areas: " titulo"
+                         " texto"
+                         " button";
+    grid-template-rows:  1fr auto 1fr;
+    row-gap: 20px;         
+}
+
+
+.inicio__titulo{
+    color: white;
+    font-size: 5rem;
+    font-family: 'Oswald', sans-serif;
+    grid-area: titulo;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: dark;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.inicio__p{
+    grid-area: texto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: darkgray;
+    font-size: 3rem;
+}
+
+.inicio__button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inicio__link{
+    border-radius: 3px;
+    font-family: montserrat,sans-serif;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    font-size: 3rem;
+    justify-content: space-around;
+    background-color: rgb(204, 207, 207);
+}
+.navbar{
+    position: sticky;
+}
+
+.navegacion_mobile{
+display: flex;
+justify-content: center;
+position: sticky;
+top: 0;
+background: #fff;
+font-size: 3rem;
+justify-content: space-around;
+background-color: rgb(204, 207, 207);
+}
+
+.navegacion_mobile li{
+    list-style: none;
+}
+
+.navegacion div{
+    margin: 2rem;
+}
+
+.navegacion a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navegacion_mobile a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navegacion span{
+    margin: 50px;
+}
+
+.acerca{
+    margin-top: 150px;
+}
+
+.proyectos{
+    margin-top: 150px;
+}
+
+.habilidades{
+    margin-top: 150px;
+}
+
+.contacto{
+    margin-top: 150px;
+}
+
+.acerca__titulo{
+    text-align: center;
+    padding-top: 8rem;
+    margin: 0px 10px 0px 10px;
+}
+
+.acerca__titulo h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.acerca__titulo p{
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: darkgray;
+    font-size: 2rem;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.acerca__yo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.acerca__yo img{
+    width: 500px;
+    height: 500px;
+}
+
+#img__acerca:hover{
+    border-radius:60%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #6b6b6b;
+    -webkit-box-shadow: 0px 0px 15px 15px #6b6b6b;
+    }
+
+.proyecto__titulo{
+    text-align: center;
+    padding-top: 8rem;
+    margin: 0px 10px 0px 10px;
+}
+
+.proyecto__titulo h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.proyecto__titulo p{
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: darkgray;
+    font-size: 2rem;
+}
+
+.proyectos__article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.gallery a{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.proyecto__img{
+    width: 250px;
+    height: 250px;
+}
+
+#img_proyecto:hover {
+    filter: grayscale(80%);
+}
+
+.habilidades__titulo{
+    text-align: center;
+    padding-top: 8rem;
+    margin: 0px 10px 0px 10px;
+}
+
+.habilidades__titulo h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.habilidades__titulo p{
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: darkgray;
+    font-size: 2rem;
+}
+
+.habilidades__article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.habilidades__article:hover .gallery {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.habilidades__article {overflow:hidden;}
+
+
+.gallery a{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.habilidades__img{
+    width: 100px;
+    height: 100px;
+}
+
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.contacto__titulo{
+    text-align: center;
+    padding-top: 8rem;
+    margin: 0px 10px 0px 10px;
+}
+
+.contacto__titulo h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contacto__titulo p{
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: darkgray;
+    font-size: 2rem;
+}
+
+input{
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 94%;
+    background: rgb(139, 139, 139);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+textarea{
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 94%;
+    height: 200px;
+    background: rgb(139, 139, 139);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+.formulario__button{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+@media only screen and (max-width: 1430px) {
+    #menu__desktop {
+        display: none !important;
+     }
+     .navegacion {
+        display: none !important;
+     }
+   }
+
+@media only screen and (min-width: 1429px) {
+    #menu_mobile {
+        display: none;
+    }
+
+}
