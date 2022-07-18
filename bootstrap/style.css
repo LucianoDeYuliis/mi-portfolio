@@ -10,7 +10,7 @@ html{
 .inicio{
     display: grid;
     height: 100vh;
-    background-color: black;
+    background-color: #212529;
     grid-template-areas: " titulo"
                          " texto"
                          " button";
@@ -34,7 +34,7 @@ h1{
     text-align: center;
     font-size: 3rem;
     letter-spacing: 0.2rem;
-    color: #222;
+    color: dark;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -86,6 +86,9 @@ p{
     font-size: 3rem;
     justify-content: space-around;
     background-color: rgb(204, 207, 207);
+}
+.navbar{
+    position: sticky;
 }
 
 .navegacion_mobile{
@@ -344,19 +347,7 @@ textarea{
 
 }
 
-.formulario__boton{
-    width: 200px;
-    height: 60px;
-    background: #000000;
-    border-radius: 5px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-}
 
-.formulario__boton::before{
-    content: 'Enviar';
-    color: white;
-}
 
 
 @media only screen and (max-width: 1430px) {
